@@ -4,85 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Really good Website</title>
+    <title>Stone-Red-Code</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="container-fluid">
+
         <div class="jumbotron-fluid header d-flex justify-content-center align-items-center">
-            <h1>Really good Website</h1>
+            <h1>Stone-Red-Code</h1>
         </div>
 
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
 
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top orange">
-            <a class="navbar-brand" href="#">Logo</a>
+        </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            Dropdown link
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <br>
-        <br>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("nav.html", function (data) {
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        <!--end of Navigation bar-->
 
         <div class="container main">
             <div class="row">
-                <div id="carouselExampleControls" class="carousel slide col-sm-4" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://picsum.photos/500?random=1" class="d-block w-100" height="100%"
-                                width="100%" alt="random image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/500?random=2" class="d-block w-100" height="100%"
-                                width="100%" alt="random image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/500??random=3" class="d-block w-100" height="100%"
-                                width="100%" alt="random image">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-                <div class="col-sm-8">
+                <div class="col-sm-8 d-flex justify-content-start">
+               <a href="http://github.com/Stone-Red-Code"><img class="stats" src="https://github-readme-stats.vercel.app/api?username=Stone-Red-Code&show_icons=true&bg_color=40444B&theme=dark&hide_border=true&count_private=true"></a>
+            </div>
+            <div class="col d-flex justify-content-start">
+               <a href="http://github.com/Stone-Red-Code"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Stone-Red-Code&bg_color=40444B&theme=dark&hide_border=true)](https://github.com/anuraghazra/github-readme-stats"></a>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <div class="jumbotron">
                         <h2>Sources:</h2>
                         <ul style="list-style-type: none; padding: 0; margin: 0;">
@@ -99,17 +58,14 @@
 
         <footer class="page-footer font-small">
             <div class="row">
-                <div class="container-fluid ml-3 mr-3 p-3 d-flex justify-content-center orange">
+                <div class="container-fluid ml-3 mr-3 p-3 d-flex align-items-center orange">
                     <div class="col">
                         <div>Get in contact:</div>
                     </div>
                     <div class="col d-flex justify-content-end">
                         <div>
-
-                            <a href="#"><img src="https://img.icons8.com/fluent-systems-filled/24/000000/facebook.png" /></a>
-                            <a href="#"><img src="https://img.icons8.com/fluent-systems-filled/24/000000/instagram-new.png" /></a>
-                            <a href="#"><img src="https://img.icons8.com/fluent-systems-filled/24/000000/linkedin.png" /></a>
-                            <a href="#"><img src="https://img.icons8.com/fluent-systems-filled/24/000000/telegram-app.png" /></a>
+                            <a href="http://github.com/Stone-Red-Code"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
+                            <a href="http://discord.com/users/374173830819872789"><img src="https://img.icons8.com/ios-glyphs/30/000000/discord-logo.png"/></a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center p-1 m-0 bg-secondary">© 2020 Copyright: This Website</div>
+            <div class="row justify-content-center align-items-center p-1 m-0 bg-secondary">©2020 Copyright: Heigl David</div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

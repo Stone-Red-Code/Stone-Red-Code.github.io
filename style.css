@@ -1,27 +1,54 @@
 .header {
-    background: url("https://picsum.photos/2000/100");
+    background: url("Images/code.png");
     height: 100px;
-    background-size: cover;
-    background-position: center;
+    background-size:auto;
+    background-position:top;
 }
 
 .orange {
-    background-color: orange;
+    background-color:gray;
 }
 
 body {
     background-color: #40444B;
+    
 }
 
 h1 {
     color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap:break-word;
+}
+
+h2
+{
+    word-wrap:break-word;
 }
 
 h3 {
     color: white;
+    word-wrap:break-word;
 }
 
 .contact>p {
     color: white;
     padding-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 19px;
+    color: black;
+}
+
+@media screen and (max-width: 768px) 
+{
+    h2
+    {
+        font-size: 20px;
+    }
+
+    .stats
+    {
+        display: none;
+    }
 }
