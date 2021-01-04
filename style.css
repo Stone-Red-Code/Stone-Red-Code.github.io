@@ -1,7 +1,26 @@
-
-:root
-{
+:root {
     --fg-theme: gray;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 257px;
+    overflow-x: hidden;
+    background-color: #40444B;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-right: 1.9rem;
+    /* Set the fixed height of the footer here */
+    height: 255px;
 }
 
 .header {
@@ -13,10 +32,6 @@
 
 .fg-theme {
     background-color: var(--fg-theme);
-}
-
-body {
-    background-color: #40444B;
 }
 
 h1 {
@@ -44,31 +59,35 @@ h3 {
     color: black;
 }
 
-
-
 a:link {
     color: gray;
     text-decoration: underline;
 }
 
 /* visited link */
+
 a:visited {
     color: gray;
 }
 
 /* mouse over link */
+
 a:hover {
     color: rgb(0, 0, 0);
 }
 
 /* selected link */
+
 a:active {
     color: rgb(180, 180, 180);
 }
 
-.nav-link
-{
+.nav-link {
     text-decoration: var(--fg-theme);
+}
+
+.toolIcon img{
+    width: 100;
 }
 
 @media screen and (max-width: 768px) {
@@ -83,9 +102,8 @@ a:active {
     }
 }
 
-@media screen and (max-width: 360px) 
-{
-    h1{
+@media screen and (max-width: 360px) {
+    h1 {
         font-size: 30px;
     }
     .mostUsedLangs {
