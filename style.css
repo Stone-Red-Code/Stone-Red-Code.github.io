@@ -1,33 +1,37 @@
+
+:root
+{
+    --fg-theme: gray;
+}
+
 .header {
     background: url("Images/code.png");
     height: 100px;
-    background-size:auto;
-    background-position:top;
+    background-size: auto;
+    background-position: top;
 }
 
-.orange {
-    background-color:gray;
+.fg-theme {
+    background-color: var(--fg-theme);
 }
 
 body {
     background-color: #40444B;
-    
 }
 
 h1 {
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    word-wrap:break-word;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
 }
 
-h2
-{
-    word-wrap:break-word;
+h2 {
+    word-wrap: break-word;
 }
 
 h3 {
     color: white;
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 .contact>p {
@@ -40,15 +44,51 @@ h3 {
     color: black;
 }
 
-@media screen and (max-width: 768px) 
+
+
+a:link {
+    color: gray;
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* selected link */
+a:active {
+    color: rgb(180, 180, 180);
+}
+
+.nav-link
 {
-    h2
-    {
+    text-decoration: var(--fg-theme);
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
         font-size: 20px;
     }
+    h4 {
+        font-size: 18px;
+    }
+    .stats {
+        display: none;
+    }
+}
 
-    .stats
-    {
+@media screen and (max-width: 360px) 
+{
+    h1{
+        font-size: 30px;
+    }
+    .mostUsedLangs {
         display: none;
     }
 }
