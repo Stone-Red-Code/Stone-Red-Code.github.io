@@ -16,6 +16,4 @@ var answerArray = new Array(
     "“A temporary defeat is nothing if it leads to ultimate victory!” – Stephanie Dola (No Game No Life)"
 );
 
-window.onload = function getAnswer() {
-    document.getElementById('quotes').innerHTML = answerArray[Math.floor(Math.random() * answerArray.length)];
-}
+document.getElementById('quotes').innerHTML = answerArray[Math.floor(Math.random() * answerArray.length)];
