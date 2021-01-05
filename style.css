@@ -25,10 +25,25 @@ footer {
 
 .header {
     background: url("Images/code.png");
-    height: 100px;
+    height: 130px;
     background-size: auto;
     background-position: top;
+    display: flex;
+	flex-direction: column;
+    align-items:center;
+    justify-content: center;
 }
+
+#quotes {
+    margin-top: -0.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.0rem 0.2rem 0.1rem 0.2rem;
+    color: white;
+    font-style:italic;
+    background-color: rgba(99, 99, 99, 0.486);
+    border-radius: 0.3rem;
+} 
 
 .fg-theme {
     background-color: var(--fg-theme);
@@ -98,6 +113,9 @@ a:active {
         font-size: 18px;
     }
     .stats {
+        display: none;
+    }
+    #quotes {
         display: none;
     }
 }

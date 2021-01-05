@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <div class="container-fluid">
 
-        <div class="jumbotron-fluid header d-flex justify-content-center align-items-center">
+        <div class="header">
             <h1>Stone-Red-Code</h1>
+            <div id="quotes"></div>
         </div>
 
         <!--Navigation bar-->
@@ -36,18 +36,20 @@
         <div class="container main">
             <div class="row">
                 <div class="col-sm-8 d-flex justify-content-start">
-               <a href="http://github.com/Stone-Red-Code"><img class="stats" src="https://github-readme-stats.vercel.app/api?username=Stone-Red-Code&show_icons=true&bg_color=40444B&theme=dark&hide_border=true&count_private=true"></a>
-            </div>
-            <div class="col d-flex justify-content-start">
-               <a href="http://github.com/Stone-Red-Code"><img class="mostUsedLangs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Stone-Red-Code&bg_color=40444B&theme=dark&hide_border=true)](https://github.com/anuraghazra/github-readme-stats"></a>
-            </div>
+                    <a href="http://github.com/Stone-Red-Code"><img class="stats"
+                            src="https://github-readme-stats.vercel.app/api?username=Stone-Red-Code&show_icons=true&bg_color=40444B&theme=dark&hide_border=true&count_private=true"></a>
+                </div>
+                <div class="col d-flex justify-content-start">
+                    <a href="http://github.com/Stone-Red-Code"><img class="mostUsedLangs"
+                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Stone-Red-Code&bg_color=40444B&theme=dark&hide_border=true)](https://github.com/anuraghazra/github-readme-stats"></a>
+                </div>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="jumbotron">
                         <h2>About this site</h2>
                         <p>This site is not finished and it's still being worked on.<br>
-                            Keep in mind, some things here are just placeholders and will be replaced or removed.
+                            Keep in mind, some things here are just placeholders and will be eventually replaced or removed.<br>
                             On this page I will post all my current projects and updates.
                         </p>
                     </div>
@@ -56,50 +58,26 @@
         </div>
         <!--end Main-->
 
-
         <!--Footer-->
-        <footer class="page-footer">
-            <div class="row m-0 p-3 d-flex align-items-center fg-theme">
-                    <div class="col">
-                        <div>Get in contact:</div>
-                    </div>
-                    <div class="col d-flex justify-content-end">
-                        <div>
-                            <a href="http://github.com/Stone-Red-Code"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
-                            <a href="http://discord.com/users/374173830819872789"><img src="https://img.icons8.com/ios-glyphs/30/000000/discord-logo.png"/></a>
-                        </div>
-                    </div>
-            </div>
-            <div class="row m-0 p-3 justify-content-start bg-dark ">
-                <div class="col col-sm-4">
-                    <h3>About me</h3>
-                    <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quia nihil fugit<br>
-                        repellendus, aut officia libero. Magnam nobis, cumque sint ea laudantium sequi illum saepe harum<br>
-                        voluptas excepturi aspernatur eveniet?</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Languages & Tools:</h3>
-                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp"><img src="https://img.icons8.com/color/50/000000/c-sharp-logo.png" height="40"/></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img src="https://img.icons8.com/color/48/000000/html-5.png" height="40"/></a>
-                    <a href="https://visualstudio.microsoft.com/vs"><img src="https://img.icons8.com/fluent/50/000000/visual-studio-2019.png" height="40"/></a>
-                    <a href="https://code.visualstudio.com/"><img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png" height="40"/></a>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Links</h3>
-                    <div><a href="https://icons8.com">Icons8</a></div>
-                    <div><a href="https://github.com/anuraghazra/github-readme-stats">GitHub-Readme-Stats</a></div>
-                </div>
-                
-            </div>
-            <div class="row p-1 m-0 justify-content-center align-items-center bg-secondary">©2020 Copyright: Heigl David</div>
-        </footer>
+        <div id="footer-placeholder">
+
+        </div>
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("footer.html", function (data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script>
         <!--end Footer-->
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"></script>
+        <script src="quotes.js"></script>
 </body>
 
 </html>

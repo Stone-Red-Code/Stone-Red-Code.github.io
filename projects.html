@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="animations.css">-->
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="jumbotron-fluid header d-flex justify-content-center align-items-center">
+        <div class="header">
             <h1>Projects</h1>
+            <div id="quotes"></div>
         </div>
 
         <!--Navigation bar-->
@@ -29,12 +31,13 @@
         </script>
         <!--end of Navigation bar-->
 
+        <!--Main-->
         <div class="container main">
             <div class="row">
                 <div class="col">
                     <div class="jumbotron p-5">
                         <h2>Helfer V4</h2>
-                        <p>Helfer allows you to improve the looks of your Desktop! You can add useful elements to your
+                        <p>Helfer allows you to improve the looks of your Desktop. You can add useful elements to your
                             desktop like a clock, a audio visualizer or even your own mods!</p>
                         <ul style="list-style-type: none; padding: 0; margin: 0;">
                             <li><a href="https://sites.google.com/view/helfer-desktop">Website</a></li>
@@ -74,7 +77,8 @@
                         <h2>SimpleWinformsAudioVisualizer</h2>
                         <p>This is a small and simple side project i made. It displays an audio spectrum based on the system sounds.</p>
                         <ul style="list-style-type: none; padding: 0; margin: 0;">
-                            <li><a href="https://github.com/Stone-Red-Code/SimpleWinformsAudioVisualizer">GitHub</a></li>
+                            <li><a href="https://github.com/Stone-Red-Code/SimpleWinformsAudioVisualizer">GitHub</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -84,7 +88,8 @@
                 <div class="col">
                     <div class="jumbotron p-5">
                         <h2>AutoBackup</h2>
-                        <p>AutoBackup is backup software that backs up your specific folders at specific time intervals.</p>
+                        <p>AutoBackup is backup software that backs up your files at specific time intervals.
+                        </p>
                         <ul style="list-style-type: none; padding: 0; margin: 0;">
                             <li><a href="https://github.com/Stone-Red-Code/AutoBackup">GitHub</a></li>
                         </ul>
@@ -93,7 +98,20 @@
             </div>
         </div>
     </div>
+    <!--end Main-->
 
+    <!--Footer-->
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $.get("footer.html", function (data) {
+            $("#footer-placeholder").replaceWith(data);
+        });
+    </script>
+    <!--end Footer-->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -101,6 +119,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <script src="quotes.js"></script>
 </body>
 
 </html>
