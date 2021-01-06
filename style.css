@@ -5,6 +5,7 @@
 html {
     position: relative;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -24,25 +25,45 @@ footer {
 }
 
 .header {
-    background: url("Images/code.png");
     height: 130px;
-    background-size: auto;
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
+.header-image {
+    background: url("Images/code.png");
+    background-position: top;
+    height: 130px;
+    filter: blur(1px);
+}
+
+.header-text {
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%,-140%);
+    white-space:nowrap ;
+  }
+
 #quotes {
+    font-weight: normal;
     margin-top: -0.4rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 0.0rem 0.2rem 0.1rem 0.2rem;
     color: white;
     font-style: italic;
-    background-color: rgba(99, 99, 99, 0.486);
+    background-color: rgba(255, 255, 255, 0.12);
     border-radius: 0.3rem;
+    visibility: hidden;
+}
+
+.fade-in
+{
+    visibility:visible !important;
+    animation: fadeIn;
+    animation-duration: 1s;
 }
 
 .fg-theme {
@@ -120,6 +141,11 @@ a:active {
     }
 }
 
+.main{
+    animation: fadeIn;
+    animation-duration: 5;
+}
+
 @media screen and (max-width: 360px) {
     h1 {
         font-size: 30px;
@@ -127,4 +153,10 @@ a:active {
     .mostUsedLangs {
         display: none;
     }
+}
+
+@keyframes fadeIn
+{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
 }
