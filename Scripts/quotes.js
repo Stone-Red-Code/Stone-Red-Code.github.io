@@ -4,7 +4,7 @@ window.onload = function() {
         "“When you said that you hate yourself, it made me want to tell you all the wonderful things I know about you.” – Rem (Re:Zero)",
         "“No matter what happens, even when it looks like you’re gonna lose, when no one else believes in you, when you don’t believe in your self, I will believe!” – Rem (Re:Zero)",
         "“Please let me believe in everything you believed in. Let me believe that life is great.” - Kanade Tachibana (Angel Beats!)",
-        "“God is so cruel. He stole all my happiness away.” - Yui Nakamura (Angel Beats!)",
+        "“God is so cruel. He stole all my happiness away.” - Yuri Nakamura (Angel Beats!)",
         "“I only wanted to love you, to make you proud.” - Yuri Nakamura (Angel Beats!)",
         "“Even death can’t cure idiocy.” – Yui (Angel Beats!)",
         "“Why am I myself, and not somebody else.” – Yuu Otosaka (Charlotte)",
