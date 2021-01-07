@@ -24,7 +24,7 @@ window.onload = function() {
         "“In reality, the least interesting answer is usually the correct one.” – Tet (No Game No Life)",
         "“Chess is no different than tic-tac-toe.” – Shiro (No Game No Life)",
         "“A temporary defeat is nothing if it leads to ultimate victory!” – Stephanie Dola (No Game No Life)",
-        "“Like they say, “make the best of a bad situation.” – Aqua (KonoSuba)",
+        "“Make the best of a bad situation.” – Aqua (KonoSuba)",
         "“This sunlight is my worst enemy after three straight all-nighters.” – Kazuma Satou (KonoSuba)"
     );
 
