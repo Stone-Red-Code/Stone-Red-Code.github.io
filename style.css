@@ -97,6 +97,7 @@ h3 {
     color: black;
 }
 
+
 a:link {
     color: gray;
     text-decoration: underline;
@@ -122,10 +123,16 @@ a:active {
 
 .nav-link {
     text-decoration: var(--fg-theme);
+    text-decoration: none!important;
 }
 
 .toolIcon img {
     width: 100;
+}
+
+.dropdown-item:active
+{
+    background-color: lightgray;
 }
 
 @media screen and (max-width: 768px) {
@@ -141,14 +148,18 @@ a:active {
     .header-text {
         margin-top: 1.1rem;
     }
+    
     #quotes {
         display: none;
     }
 }
 
-.main{
-    animation: fadeIn;
-    animation-duration: 5;
+@media screen and (max-width: 580px)
+{
+    .dropdown-menu{
+        background-color: var(--fg-theme)!important;
+        border: none;
+    }
 }
 
 @media screen and (max-width: 360px) {

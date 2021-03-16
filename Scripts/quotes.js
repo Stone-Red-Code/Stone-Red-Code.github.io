@@ -1,5 +1,5 @@
-window.onload = function() {
-    var answerArray = new Array(
+
+    let answerArray = new Array(
         "“A million sorry’s is not equal to 1 thank you.” – Emilia (Re:Zero)",
         "“When you said that you hate yourself, it made me want to tell you all the wonderful things I know about you.” – Rem (Re:Zero)",
         "“No matter what happens, even when it looks like you’re gonna lose, when no one else believes in you, when you don’t believe in your self, I will believe!” – Rem (Re:Zero)",
@@ -27,7 +27,6 @@ window.onload = function() {
         "“Make the best of a bad situation.” – Aqua (KonoSuba)",
         "“This sunlight is my worst enemy after three straight all-nighters.” – Kazuma Satou (KonoSuba)"
     );
-
+    
     document.getElementById('quotes').innerHTML = answerArray[Math.floor(Math.random() * answerArray.length)];
     document.getElementById('quotes').classList.add("fade-in");
-}
