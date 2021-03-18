@@ -14,7 +14,7 @@ let image = {
 (function main() {
     canvas = document.getElementById("mainpanel");
     ctx = canvas.getContext("2d");
-    image.img.src = 'http://github.com/Stone-Red-Code.png';
+    image.img.src = 'https://github.com/Stone-Red-Code.png';
     canvas.style.width = '100%';
     canvas.style.height = '100%';
     canvas.width = 1000;
