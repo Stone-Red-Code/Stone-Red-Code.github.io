@@ -15,11 +15,12 @@ body {
 }
 
 footer {
-    position: absolute;
     bottom: 0;
-    width: 100%;
-    padding-right: 1.9rem;
-    /* Set the fixed height of the footer here */
+    box-sizing: border-box;
+    right: 15px;
+    left: 15px;
+    position: absolute;
+    /* Set the fixed height of the footer */
     height: 255px;
 }
 
