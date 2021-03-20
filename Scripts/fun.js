@@ -24,8 +24,6 @@ let image = {
 
 function update() {
     setTimeout(() => {
-        ctx.fillStyle = 'transparent';
-        ctx.fillRect(image.x, image.y, image.img.width * scale, image.img.height * scale);
         ctx.drawImage(image.img, image.x, image.y, image.img.width * scale, image.img.height * scale);
 
         image.x += image.xspeed;
