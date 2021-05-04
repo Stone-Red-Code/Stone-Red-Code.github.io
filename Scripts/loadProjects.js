@@ -35,7 +35,7 @@ function addItem (item)
     
     let head = document.createTextNode(item.name);
     let desc = document.createTextNode(item.description);
-    repo.innerHTML = "GitHub";
+    repo.innerHTML = "Repository";
     repo.href = item.html_url;
 
     heading.appendChild(head);
