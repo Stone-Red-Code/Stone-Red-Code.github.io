@@ -3,11 +3,9 @@ const main = document.getElementById("projectslist");
 request.open('GET', 'https://api.github.com/search/repositories?q=user:stone-red-code');
 request.responseType = 'text';
 request.onload = function() {
-    console.log(request.response);
     let jsonData = JSON.parse(request.response);
     for (let i = 0; i < jsonData.items.length; i++) {
         let item = jsonData.items[i];
-        console.log(item.name);
         addItem(item);
     }
 };
