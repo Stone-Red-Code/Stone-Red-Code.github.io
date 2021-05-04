@@ -1,4 +1,3 @@
-
     let answerArray = new Array(
         "“A million sorry’s is not equal to 1 thank you.” – Emilia (Re:Zero)",
         "“When you said that you hate yourself, it made me want to tell you all the wonderful things I know about you.” – Rem (Re:Zero)",
@@ -25,8 +24,12 @@
         "“Chess is no different than tic-tac-toe.” – Shiro (No Game No Life)",
         "“A temporary defeat is nothing if it leads to ultimate victory!” – Stephanie Dola (No Game No Life)",
         "“Make the best of a bad situation.” – Aqua (KonoSuba)",
-        "“This sunlight is my worst enemy after three straight all-nighters.” – Kazuma Satou (KonoSuba)"
-    );
+        "“This sunlight is my worst enemy after three straight all-nighters.” – Kazuma Satou (KonoSuba)",
+        "“Maybe we can't win alone, but the two of us together can!” – Ichigo (Darling in the Franxx)",
+        "“If you have anything you wanna say, you better spit it out while you can. Because you’re all going to die sooner or later.” – Zero Two (Darling in the Franxx)",
+        "“When I saw magic being used for evil and good, I realized I wanted to lead the human race down the right path.” – Rumia Tingel (Akashic Records Of Bastard Magic Instructor)",
+        "“The trick is to find something you can care about and just live for that.” – Glenn Radars (Akashic Records Of Bastard Magic Instructor)"
+        );
     
     document.getElementById('quotes').innerHTML = answerArray[Math.floor(Math.random() * answerArray.length)];
     document.getElementById('quotes').classList.add("fade-in");
