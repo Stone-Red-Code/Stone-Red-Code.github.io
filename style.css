@@ -52,11 +52,21 @@ footer {
 .jumbotron {
     animation-name: fadeGray;
     background: #dadde0;
-    transition: background-color 0.5s ease-out 100ms;
+    transition: background-color 0.5s ease-out 100ms, filter 0.5s ease-out 100ms;
+    filter: none;
 }
 
 .jumbotron:hover {
     background-color: #ffffff;
+    filter: drop-shadow(0px 0px 0.4rem #dadde0);
+}
+
+#Tools>a>img {
+    transition: all 0.2s;
+}
+
+#Tools>a>img:hover {
+    transform: scale(1.1)
 }
 
 #quotes {
@@ -70,6 +80,11 @@ footer {
     background-color: rgba(255, 255, 255, 0.12);
     border-radius: 0.3rem;
     visibility: hidden;
+    transition: filter 0.5s ease-out 100ms;
+}
+
+#quotes:hover {
+    filter: drop-shadow(0px 0px 1rem darkgray);
 }
 
 .fade-in {
@@ -97,9 +112,12 @@ h3 {
     word-wrap: break-word;
 }
 
-.contact>p {
-    color: white;
-    padding-left: 10px;
+#contactItems>a>img {
+    transition: transform 0.5s;
+}
+
+#contactItems>a>img:hover {
+    transform: scale(1.15);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -112,19 +130,13 @@ a:link {
     text-decoration: underline;
 }
 
-/* visited link */
-
 a:visited {
     color: gray;
 }
 
-/* mouse over link */
-
 a:hover {
     color: black;
 }
-
-/* selected link */
 
 a:active {
     color: rgb(180, 180, 180);
