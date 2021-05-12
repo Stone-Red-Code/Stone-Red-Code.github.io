@@ -23,6 +23,7 @@ function addItem (item)
     col.classList.add("col");
     jumbotron.classList.add("jumbotron");
     jumbotron.classList.add("p-5");
+    jumbotron.classList.add("fade-in");
 
     jumbotron.appendChild(heading);
     jumbotron.appendChild(description);
