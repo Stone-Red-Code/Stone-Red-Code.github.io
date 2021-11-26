@@ -5,4 +5,4 @@
 https://stone-red-code.github.io/
 
 ## Visit the new one
-https://stone-red.net
+http://stone-red.net
