@@ -1,5 +1,7 @@
 # Stone-Red-Code.github.io
 
-> My personal website
+> My old personal website
 <p>
 https://stone-red-code.github.io/
+
+Visit the new one https://stone-red.net
